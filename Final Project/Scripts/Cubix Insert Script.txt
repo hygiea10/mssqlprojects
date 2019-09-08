@@ -1,0 +1,41 @@
+/* INSERT Statements For: Service */
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (1, 'Basic Tune', 'Our basic tune-up will make sure your bike is in good condition and performing crisply. Ideal for refreshing your bike after it has seen some wear or some storage. ');
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (2, 'Annual Tune-Up', 'Our annual tune-up gives your bike the thorough checkup it needs to be ready to go for another year of daily service.');
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (3, 'Enthusiast Tune-Up ', 'Our enthusiast tune is for the bike that has seen some miles! This package is for the rider who spends a lot of time on their bike, and expects it to be there for them');
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (4, 'The Overhaul', 'Our most thorough service offering. Your bike with new cables and housing, after all components are meticulously cleaned, re-lubricated and prepped, and any necessary frame alterations are made.');
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (5, 'Brake Adjustment', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (6, 'Brake Install', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (7, 'Brake Overhaul', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (8, 'Cassette Install/Remove', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (9, 'Chain Install', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (10, 'Crankset Install', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (11, 'Derailleur Cable Install', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (12, 'Derailleur Adjust', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (13, 'Derailleur Install', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (14, 'Derailleur Hanger Install', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (15, 'Pedals Install', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (16, 'Pedals & Cleat Install', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (17, 'Toe Clip Install', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (18, 'Fork Install', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (19, 'Assemble Bike', NULL);
+INSERT INTO Service (serviceID, serviceName, serviceDesc)
+Values (20, 'Build Up From Frame ', NULL);

@@ -1,0 +1,9 @@
+[ODBC]
+DRIVER=SQL Server
+UID=Hex2Binary
+DATABASE=Cubix
+WSID=HEX2BINARY-PC
+APP=Microsoft Office 2010
+Trusted_Connection=Yes
+SERVER=(local)
+Description=final

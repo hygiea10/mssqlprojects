@@ -1,0 +1,59 @@
+ SELECT * FROM Service
+ SELECT * FROM EmployeeRole
+ SELECT * FROM State 
+ SELECT * FROM City
+ SELECT * FROM Location
+ SELECT * FROM Employee
+ SELECT * FROM LocationService
+ SELECT * FROM ServiceStatus
+ SELECT * FROM BikeType
+ SELECT * FROM BikeCondition
+ SELECT * FROM Customer 
+ SELECT * FROM Event
+ SELECT * FROM EventCustomer
+ SELECT * FROM Brand
+ SELECT * FROM BikeInventory
+ SELECT * FROM Reference
+ SELECT * FROM BikeInventoryService
+
+Select employee.empLastName as 'Last Name',
+	   employee.empFirstName as 'First Name',
+	   service.serviceName as 'Service Completed',
+	   bikeInventoryService.bikeEntryDate as 'Entry Date', 
+	   serviceStatus.statusName as 'Status'
+	
+From BikeInventoryService
+JOIN employee on BikeInventoryService.empID = employee.empID
+JOIN service on BikeInventoryService.serviceID = service.serviceID  
+JOIN serviceStatus on serviceStatus.serviceStatusID = BikeInventoryService.serviceStatusID
+order by employee.empLastName
+
+
+Select min(locationService.servicePrice) 'Lowest Price',
+	   service.serviceName
+	  -- location.locationName
+FROM locationService
+JOIN Service on service.serviceID = locationService.serviceID
+JOIN Location on location.locationID = locationService.locationID  
+GROUP BY service.serviceName, location.locationName
+
+
+Select locationService.servicePrice 'Lowest Price',
+	   service.serviceName,
+	   location.locationName
+FROM locationService
+JOIN Service on service.serviceID = locationService.serviceID
+JOIN Location on location.locationID = locationService.locationID  
+order by service.serviceName, locationService.servicePrice
+	
+--where isdate(bikePurchasedDate) = 1
+
+Select * From Bikeinventory 
+where isdate(bikePurchasedDate) = 1
+		
+SELECT bikeinventory.locationID 'Location ID',
+	   Location.locationName 'Location Name',
+	   sum(bikeinventory.bikePrice) 'Total Revenue' From Bikeinventory
+JOIN location On location.locationID = bikeinventory.locationID
+WHERE isdate(bikeinventory.bikePurchasedDate) = 1
+GROUP BY bikeinventory.locationid, Location.locationName

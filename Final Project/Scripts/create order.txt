@@ -1,0 +1,127 @@
+Create Order
+
+1.  Service
+2.  EmployeeRole
+3.  State 
+4.  City
+5.  Location
+6.  Employee
+7.  LocationService
+8.  ServiceStatus
+9.  BikeType
+10. BikeCondition
+11. Customer -
+12. Event
+13. EventCustomer
+14. Brand
+15. BikeInventory
+16. Reference
+17. BikeInventoryService
+
+
+DeleteOrder
+
+1. BikeInventoryService
+2. Reference
+3. BikeInventory
+4. Brand
+5. EventCustomer
+6. Event
+7. Customer
+8. BikeCondition
+9. BikeType
+10. ServiceStatus
+11. LocationService	
+12. Employee
+13. Location
+14. City
+15. State
+16. EmployeeRole
+17. Service
+
+
+
+Service	serviceID
+Service	serviceName
+Service	serviceDesc
+EmployeeRole	empRoleID
+EmployeeRole	empRoleName
+EmployeeRole	empRoleDesc
+State	stateID
+State	stateName
+City	cityID
+City	cityName
+City	stateID
+Location	locationID
+Location	locationAddress
+Location	locationZip
+Location	cityID
+Employee	empID
+Employee	empFirstName
+Employee	empPhone
+Employee	empAddress
+Employee	empHireDate
+Employee	empEmail
+Employee	cityID
+Employee	empRoleID
+Employee	locationID
+LocationService	locationID
+LocationService	serviceID
+LocationService	servicePrice
+ServiceStatus	serviceStatusID
+ServiceStatus	statusName
+ServiceStatus	statusDesc
+BikeType	bikeTypeID
+BikeType	bikeType
+BikeCondition	bikeConditionID
+BikeCondition	bikeCondition
+BikeCondition	bikeConditionDesc
+Customer	customerID
+Customer	customerLast
+Customer	customerFirst
+Customer	customerPhone
+Customer	customerAddress
+Customer	customerZipcode
+Customer	customerJoinDate
+Customer	customerEmail
+Customer	cityID
+Event	eventID
+Event	eventName
+Event	eventAddress
+Event	eventZipcode
+Event	eventState
+Event	eventDate
+Event	eventdesc
+Event	cityID
+EventCustomer	eventID
+EventCustomer	customerID
+Brand	brandID
+Brand	brandName
+BikeInventory	bikeInventoryID
+BikeInventory	bikeSerialNum
+BikeInventory	bikeName
+BikeInventory	bikeSize
+BikeInventory	bikePrice
+BikeInventory	bikeColorScheme
+BikeInventory	bikeSpecDesc
+BikeInventory	bikePurchasedDate
+BikeInventory	bikeConditionID
+BikeInventory	bikeTypeID
+BikeInventory	locationID
+BikeInventory	customerID
+BikeInventory	serviceStatusID
+BikeInventory	brandID
+Reference	referenceID
+Reference	referLocationID
+Reference	referToLocationID
+Reference	bikeInventoryID
+Reference	referCustomerID
+Reference	referDetails
+BikeInventoryService	bikeInventoryID
+BikeInventoryService	serviceID
+BikeInventoryService	empID
+BikeInventoryService	bikeEntryDate
+
+
+http://bicyclehabitat.com/about/tune-up-packages-pg831.htm
+http://www.generatedata.com/
